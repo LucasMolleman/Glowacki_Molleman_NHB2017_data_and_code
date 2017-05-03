@@ -4,7 +4,7 @@ a<-read.table('Experimental_data.txt', header=TRUE, sep='\t')
 
 # create matrix counting for each individual his 'reliance on social learning'
 mat<-matrix(0, nrow=0, ncol=2)
-cnt<-1;
+
 for (ind in unique(a$playerNr)){
 	b<-subset(a, a$playerNr==ind)
 	# in period 1, no social information was available yet
